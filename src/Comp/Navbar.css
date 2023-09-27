@@ -1,0 +1,312 @@
+.navmain{
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    font-family: 'syne';
+    /* padding-left: 6vw; */
+    height: 100vh;
+}
+
+.navnavbar{
+    display: flex;
+    flex-direction: column;
+    padding-left: 6vw;
+    color: white;
+    font-family: 'poppins';
+    /* width: 95%; */
+
+}
+
+.uppertop{
+    display: flex;
+    padding: 0 6vw;
+    align-items: center;
+    color: #626262;
+    background-color: #1A1A1A;
+    justify-content: space-between;
+}
+
+.topright{
+    display: flex;
+    align-items: center;
+}
+.topright p{
+    padding: 0 10px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.topleft{
+    align-items: center;
+    display: flex;
+}
+
+.topleft p{
+    padding-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.navheading{
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+    align-items: baseline;
+    border-bottom: 1px solid whitesmoke;
+}
+.navheading h1{
+    font-family: 'poppins';
+    font-weight: 275px;
+    font-size: 40px;
+    margin: 0;
+}
+.navright{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+}
+
+.navrighticons{
+    display: flex;
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+
+.navrighticons h3{
+    cursor: pointer;
+}
+
+.hamburgersign{
+    display: none;
+}
+.hamburgersign h1{
+    margin: 0;
+    padding: 0;
+}
+.navnavlist{
+/* width: 60vw; */
+display: flex;
+justify-content: space-between;
+}
+.navnavlist ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.navnavlist ul li{
+    display: flex;
+    margin: auto;
+    margin: 0 30px;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'poppins';
+    cursor: pointer;
+}
+#nestedoductlist{
+    position: absolute;
+    top: 21.5vh;
+    /* display: none; */
+}
+#nestedoductlist li{
+    list-style-type: none;
+    margin: 0   ;
+}
+
+#nestedproduct:hover #nestedoductlist{
+        display: block;
+}
+
+.navnavlistmobile{
+    margin-left: -6vw;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 35px;
+    font-weight: 600;
+    position: absolute;
+    z-index: 200;
+    background-color: black;
+    height: 86vh;
+    width: 100vw;
+    top: 110px;
+}
+.navnavlistmobile ul{
+    list-style-type: none;
+}
+.navnavlistmobile ul li{
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#nestedoductlistmobile{
+    display: block;
+}
+
+/* #nestedmobilelist */
+
+
+.navad{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/backgroundnav.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+}
+
+.navad img{
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    justify-self: flex-end;
+}
+.navad h1{
+    font-weight: 800;
+    font-family: 'Syne';
+    padding-left: 50px;
+}
+
+.navadwithhead{
+    margin-top:7vh;
+    z-index: 2;
+}
+
+.navadwithhead h1{
+    line-height: 0.1;
+    font-size: 135px;
+}
+
+.navadwithhead .secondheading{
+    margin-left: 20vw;
+}
+
+.navorangeback{
+background: #F07E15;
+width: 76vw;
+height: 300px;
+opacity: 70%;
+position: absolute;
+right: 0;
+top: 0;
+margin-top: 300px;
+
+}
+
+.navfooter{
+align-self: baseline;
+    display: inline-flex;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 6vw;
+}
+.navfooter h1{
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0;
+}
+
+@media (min-height:800px) {
+    .navmain{
+        height: 80vh;
+    }
+}
+
+@media (max-width:800px) {
+    .navorangeback{
+        width: 100%;
+        height: 40vw;
+    }
+    .navadwithhead{
+        margin-top: 20vh;
+        z-index: 2;
+    }
+    .navad h1{
+        padding-left: 0;
+        line-height: 5vh;
+        font-size: 12vw;
+      
+    }
+    .hamburgersign{
+        display: block;
+        z-index: 200;
+    }
+    .navright{
+        display: none;
+    }
+    .navnavlist{
+        display: none;
+    }
+    .navadwithhead .secondheading{
+        margin-left: 6vw;
+    }
+    .navfooter{
+        margin-top: -2.5vw;
+    }
+}
+
+    @media (max-width:500px) {
+        .navad{
+            height: 550px;
+        }
+        .topleft{
+            width: 100%;
+        }
+        .navadwithhead{
+        margin-top: 25vh;
+
+        }
+        .navad h1{
+        font-size: 55px;
+
+        }
+        .topleft p{
+            padding: 0;
+        }
+        .topleft .return{
+            padding-left: 4px;
+        }
+        .topright p{
+            padding: 2px;
+        }
+        .navorangeback{
+            height: 200px;
+            top: 7vh;
+        }
+        .navfooter{
+            margin-top: -5vh;   
+        }
+    }
+
+@media (max-width:300px) {
+    .navmain{
+        height: 90vh;
+    }
+    .navadwithhead{
+        margin-top: 30vh;
+    }
+    .navadwithhead h1{
+        font-size: 35px;
+    }
+    .navheading h1{
+        font-size: 30px;
+    }
+    .navad{
+        height: 100vh;
+    }
+    .navorangeback{
+        top: 4vh;
+    }
+    .navfooter{
+            margin-top: 1vh;
+        }
+        .navfooter h1{
+            font-size: 14px;
+        }
+        .navad{
+            height: 70vh;
+        }
+}
